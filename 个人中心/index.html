@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				
+				overflow-y: scroll;
+			}
+			header{
+				height: 56px;
+				width: 100%;
+				background: #2189bf;
+				position: relative;
+			}
+			header #i1{
+				margin-left: 51px;
+				margin-top: 11px;
+				margin-bottom: 11px;
+			}
+			header input{
+				width: 312px;
+				height: 27px;
+				border-radius: 20px;
+				margin-left: 730px;
+				margin-top: 12px;
+				position: absolute;
+				border: 0px;
+			}
+			header #i2{
+				position: absolute;
+				margin-top: 18px;
+				margin-left: 748px;
+			}
+			header #i3{
+				position: absolute;
+				margin-top: 20px;
+				right: 120px;
+			}
+			header p{
+				font-size: 12px;
+				color: #FFF;
+				position: absolute;
+				top: 20px;
+				right: 94px;
+				font-family: '黑体';
+			}
+			.box{
+				height: 1210px;
+				width: 100%;
+			}
+			.left{
+				width:260px;
+				float: left;
+			}
+			.left_one{
+				width: 260px;
+				height: 149px;
+				background: #2a2e3d;
+				position: relative;
+			}
+			.left_one #i4{
+				position: absolute;
+				top: 24px;
+				left: 50px;
+			}
+			.left_one #i5{
+				position: absolute;
+				top: 19px;
+				left: 44px;
+			}
+			.left_one #p1{
+				position: absolute;
+				font-size: 16px;
+				color: #FFFFFF;
+				margin-left: 120px;
+				top: 40px;
+				font-family: "黑体";
+			}
+			.left_one #p2{
+				color: #6e8095;
+				position: absolute;
+				top:98px;
+				left:62px;
+				font-size: 12px;
+				font-family: "宋体";
+				font-weight: bold;
+				text-align: center;
+			}
+			.left_one #p3{
+				color: #6e8095;
+				position: absolute;
+				top:98px;
+				left:150px;
+				font-size: 12px;
+				font-family: "宋体";
+				font-weight: bold;
+				text-align: center;
+			}
+			.left_one div{
+				position: absolute;
+				height: 30px;
+				width: 2px;
+				top: 98px;
+				left: 118px;
+				background: #323647;
+			}
+			.left_two{
+				width:260px;
+				height: 192px;
+				background: #383d4e;
+				position: relative;
+			}
+			.left_two #ic1{
+				margin-left:45px;
+				margin-top: 14px;
+			}
+			.left_two #sp1{
+				margin-left: 12px;
+				color: #FFFFFF;
+				font-size: 12px;
+			}
+			.left_two #ic2{
+				margin-top: 17px;
+				margin-left: 69px;
+			}
+			.left_two #ic2_2{
+				position: absolute;
+				top: 46px;
+				left: 85px;
+				
+			}
+			.left_two #sp2{
+				font-size: 12px;
+				color: #6e8095;
+				font-family: "黑体";
+				position: absolute;
+				top: 46px;
+				margin-left: 23px;
+			}
+			.left_two #ic3_2{
+				position: absolute;
+				top: 75px;
+				left: 85px;
+				
+			}
+			.left_two #sp3{
+				font-size: 12px;
+				color: #ededef;
+				font-family: "黑体";
+				position: absolute;
+				top: 76px;
+				margin-left: 15px;
+			}
+			.left_two #ic4{
+				margin-left: 100px;
+				margin-top: 15px;
+			}
+			.left_two #sp4{
+				position: absolute;
+				font-size: 12px;
+				color: #ededef;
+				top: 102px;
+				left: 115px;
+			}
+			.left_two #ic5{
+				margin-left: 100px;
+				margin-top: 15px;
+			}
+			.left_two #sp5{
+				position: absolute;
+				font-size: 12px;
+				color: #6e8095;
+				top: 134px;
+				left: 115px;
+			}
+			.left_two #ic6{
+				margin-top:14px;
+				margin-left: 69px;
+				
+			}
+			.left_two #ic6_2{
+				margin-left: 8px;
+			}
+			.left_two #sp6{
+				font-size: 12px;
+				color: #6e8095;
+				font-family: "黑体";
+				position: absolute;
+				margin-top: 12px;
+				margin-left: 6px;
+			}
+			.left_three{
+				background: #2a2e3d;
+				width: 260px;
+				height: 870px;
+			}
+			.left_three #ic7{
+				margin-left: 45px;
+				margin-top: 16px;
+			}
+			.left_three span{
+				font-size: 12px;
+				margin-left: 14px;
+				color: #6e8095;
+				font-family: '黑体';
+			}
+			.left_three #ic8{
+				margin-left: 45px;
+				margin-top: 35px;
+			}
+			.left_three #ic9{
+				margin-left: 45px;
+				margin-top: 35px;
+			}
+			.left_three #ic10{
+				margin-left: 45px;
+				margin-top: 35px;
+			}
+			.left_three #ic11{
+				margin-left: 45px;
+				margin-top: 35px;
+			}
+			.right{
+				float: right;
+				width: 1027px;
+			}
+			.right .header{
+				height:31px;
+				background: #FFFFFF;
+			}
+			.right p{
+				font-size: 13px;
+				font-family: '黑体';
+				color: #cfcfcf;
+				margin-left: 30px;
+				line-height: 31px;
+			}
+			.right span{
+				color: #82a8cb;
+			}
+			.right .content{
+				background: #eeeeed;
+				height: 1181px;
+				width: auto;
+				position: relative;
+			}
+			.right .input{
+				position: absolute;
+				border: 1px solid #ccc;
+				background: #FFFFFF;
+				top: 20px;
+				right: 63px;
+				left: 63px;
+				height: 85px;
+			}
+			.input  #s1{
+				position: absolute;
+				margin-left:30px;
+				top: 20px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se1{
+				position: absolute;
+				margin-left: 79px;
+				width: 70px;
+				height:26px;
+				top: 14px;
+				font-size: 12px;
+				text-indent: 6px;
+			}
+			.input #s2{
+				position: absolute;
+				margin-left:188px;
+				top: 20px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se2{
+				position: absolute;
+				margin-left: 228px;
+				width: 120px;
+				height:26px;
+				top: 14px;
+				font-size: 12px;
+			}
+			.input #s3{
+				position: absolute;
+				margin-left:408px;
+				top: 20px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se3{
+				position: absolute;
+				margin-left: 448px;
+				width: 120px;
+				height:23px;
+				top: 14px;
+				font-size: 12px;
+			}
+			.input #s4{
+				position: absolute;
+				margin-left:585px;
+				top: 20px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se4{
+				position: absolute;
+				margin-left: 628px;
+				width: 70px;
+				height:26px;
+				top: 14px;
+				font-size: 12px;
+			}
+			.input #s5{
+				position: absolute;
+				margin-left:188px;
+				top: 52px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se5{
+				position: absolute;
+				margin-left: 228px;
+				width: 120px;
+				height:26px;
+				top: 46px;
+				font-size: 12px;
+			}
+			.input #s6{
+				position: absolute;
+				margin-left:408px;
+				top: 52px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se6{
+				position: absolute;
+				margin-left: 448px;
+				width: 70px;
+				height:26px;
+				top: 46px;
+				font-size: 12px;
+			}
+			.input #s7{
+				position: absolute;
+				margin-left:530px;
+				top: 52px;
+				font-size: 12px;
+				color: #aaaaaa;
+			}
+			.input #se7{
+				position: absolute;
+				margin-left: 578px;
+				width: 120px;
+				height:26px;
+				top: 46px;
+				font-size: 12px;
+			}
+			.input #btn1{
+				background: #388ac1;
+				width: 50px;
+				height:25px;
+				border: 0px;
+				position:absolute;
+				top: 31px;
+				right: 113px;
+				color: #FFFFFF;
+			}
+			.input img{
+				position: absolute;
+				top: 24px;
+				left: 350px;
+			}
+			.content .btn{
+				position: absolute;
+				top: 115px;
+				right: 63px;
+				left: 63px;
+				height: 63px;
+				
+			}
+			.btn .prev{
+				width: 29px;
+				height: 64px;
+				background: #ffffff;
+				text-align: center;
+				line-height: 62px;
+				display: inline-block;
+				font-size: 24px;
+				position: absolute;
+				color: #afafaf;
+				border: 1px solid #cacdd1;
+			}
+			.btn #box_1{
+				border-left: 1px solid #cacdd1;			
+				border-top: 3px solid #4388c8;
+				width:114px;
+				height: 61px;
+				background: #FFFFFF;
+				display: inline-block;
+				margin-left: 35px;
+			}
+			#box_1 p{
+				color: #323333;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-top: 0px;
+			}
+			#box_1 .span1{
+				color: #aeaead;
+				margin-left: 25px;
+				position: absolute;
+				top: 35px;
+			}
+			#box_1 .span2{
+				color: #ec6500;
+				font-size: 21px;
+				margin-left: 38px;
+				position: absolute;
+				top: 30px;
+				font-family: "微软雅黑";
+			}
+			.btn .box_2{
+				border-left: 1px solid #cacdd1;	
+				border-top: 1px solid #cacdd1;			
+				width:108px;
+				height: 60px;
+				margin-left: 1px;
+				background: #FFFFFF;
+				display: inline-block;
+				padding-top: 3px;
+			}
+			.box_2 p{
+				color: #323333;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-top: 0px;
+			}
+			.box_2 .span1{
+				color: #aeaead;
+				margin-left: 25px;
+				position: absolute;
+				top: 35px;
+			}
+			.box_2 .span2{
+				color: #ec6500;
+				font-size: 21px;
+				margin-left: 38px;
+				position: absolute;
+				top: 30px;
+				font-family: "微软雅黑";
+			}
+			.btn .next{
+				width: 29px;
+				height: 64px;
+				background: #ffffff;
+				text-align: center;
+				line-height: 62px;
+				display: inline-block;
+				font-size: 24px;
+				position: absolute;
+				left: 734px;
+				color: #afafaf;
+				border: 1px solid #cacdd1;
+			}
+			.btn .box_3{
+				border: 1px solid #cacdd1;
+				width: 130px;
+				height: 63px;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				background: #FFFFFF;
+				line-height: 63px;
+			}
+			.box_3 img{
+				padding-left: 19px;
+				padding-top: 15px;
+			}
+			.box_3 p{
+				color: #000000;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				position: absolute;
+				top: 16px;
+				left: 30px;
+			}
+			.content .box_color{
+				position: absolute;
+				top: 195px;
+				right: 63px;
+				left: 63px;
+				/*border: 1px solid #ccc;*/
+			}
+			.box_color p{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				color: #323333;
+				margin-left:0px;
+			}
+			.box_color .box_g{
+				width:203px;
+				height: 71px;
+				border: 1px solid #d3d4d7;
+				border-left:3px solid #43b29d;
+				background: #FFFFFF;
+				position: relative;
+				top: -5px;
+				display: inline-block;
+			}
+			.box_g .span3{
+				font-size: 12px;
+				color: #000000;
+				position: absolute;
+				top: 19px;
+				left: 13px;
+			}
+			.box_g .span4{
+				font-size: 12px;
+				color: #aaaaaa;
+				position: absolute;
+				top: 44px;
+				left: 15px;
+			}
+			.box_g #green{
+				background: #43b29d;
+				width: 60px;
+				height: 47px;
+				position: absolute;
+				top: 13px;
+				right: 18px;
+			}
+			.box_color .box_b{
+				width:203px;
+				height: 71px;
+				border: 1px solid #d3d4d7;
+				border-left:3px solid #388ac1;
+				background: #FFFFFF;
+				position: relative;
+				top: -5px;
+				display: inline-block;
+				margin-left: 20px;
+			}
+			.box_b .span3{
+				font-size: 12px;
+				color: #000000;
+				position: absolute;
+				top: 19px;
+				left: 13px;
+			}
+			.box_b .span4{
+				font-size: 12px;
+				color: #aaaaaa;
+				position: absolute;
+				top: 44px;
+				left: 15px;
+			}
+			.box_b #blue{
+				background: #388bc2;
+				width: 60px;
+				height: 47px;
+				position: absolute;
+				top: 13px;
+				right: 18px;
+			}
+			.box_color .box_r{
+				width:203px;
+				height: 71px;
+				border: 1px solid #d3d4d7;
+				border-left:3px solid #d04a36;
+				background: #FFFFFF;
+				position: relative;
+				top: -5px;
+				display: inline-block;
+				margin-left: 20px;
+			}
+			.box_r .span3{
+				font-size: 12px;
+				color: #000000;
+				position: absolute;
+				top: 19px;
+				left: 13px;
+			}
+			.box_r .span4{
+				font-size: 12px;
+				color: #aaaaaa;
+				position: absolute;
+				top: 44px;
+				left: 15px;
+			}
+			.box_r #red{
+				background: #d04a36;
+				width: 60px;
+				height: 47px;
+				position: absolute;
+				top: 13px;
+				right: 18px;
+			}
+			.box_color .box_y{
+				width:203px;
+				height: 71px;
+				border: 1px solid #d3d4d7;
+				border-left:3px solid #e2cd46;
+				background: #FFFFFF;
+				position: relative;
+				top: -5px;
+				display: inline-block;
+				left: 20px;
+			}
+			.box_y .span3{
+				font-size: 12px;
+				color: #000000;
+				position: absolute;
+				top: 19px;
+				left: 13px;
+			}
+			.box_y .span4{
+				font-size: 12px;
+				color: #aaaaaa;
+				position: absolute;
+				top: 44px;
+				left: 15px;
+			}
+			.box_y #yellow{
+				background: #e2cd46;
+				width: 60px;
+				height: 47px;
+				position: absolute;
+				top: 13px;
+				right: 18px;
+			}
+			.content .table_top{
+				position: relative;
+				height:355px;
+				width: 891px;
+				left: 61px;
+				right: 61px;
+				top: 308px;
+				/*border: 1px solid #666;*/
+			}
+			.table_top .table_1{
+				width: 534px;
+				height: 355px;
+				border-radius: 15px;
+				border: 1px solid #d0d2d6;
+				background: #fff;
+				position: relative;
+				float: left;
+			}
+			.table_1 .text{
+				border-bottom: 1px solid #e7e8eb;
+				border-radius: 15px 15px 0 0 ;
+				background: #f4f5f7;
+			}
+			.text p{
+				height: 40px;
+				line-height: 40px;
+				color: #aaaaaa;
+			}
+			.table_1 .pro{
+				width: 490px;
+				height: 26px;
+				border-bottom:1px solid #cacbcb;
+				margin-top: 12px;
+				margin-left: 21px;
+			}
+			.table_1 .pro_1{
+				position: absolute;
+				width: 84px;
+				height: 26px;
+				left: 21px;
+				top: 52px;
+				border: 1px solid #d0d2d6;
+				border-bottom: 1px solid #fff;
+				text-align: center;
+				line-height: 26px;
+				border-radius: 10px 10px 0 0 ;
+			}
+			.table_1 .pro_2{
+				position: absolute;
+				width: 84px;
+				height: 27px;
+				left: 110px;
+				top: 52px;
+				text-align: center;
+				line-height: 27px;
+				border-radius: 5px 5px 0 0 ;
+				background: #ececef;
+			}
+			.table_1 .pro_3{
+				position: absolute;
+				width: 84px;
+				height: 27px;
+				left: 197px;
+				top: 52px;
+				text-align: center;
+				line-height: 27px;
+				border-radius: 5px 5px 0 0 ;
+				background: #ececef;
+			}
+			.table_1 .pro_4{
+				position: absolute;
+				width: 84px;
+				height: 27px;
+				left: 286px;
+				top: 52px;
+				text-align: center;
+				line-height: 27px;
+				border-radius: 5px 5px 0 0 ;
+				background: #ececef;
+			}
+			.table_1 .pro_5{
+				position: absolute;
+				width: 84px;
+				height: 27px;
+				left: 376px;
+				top: 52px;
+				text-align: center;
+				line-height: 27px;
+				border-radius: 5px 5px 0 0 ;
+				background: #ececef;
+			}
+			.table_1 .table_box{
+				width:490px;
+				height:252px;
+				border-radius: 5px 5px 5px 5px;
+				position: absolute;
+				left: 21px;
+				top: 80px;
+				border: 1px solid #cacbcb;
+				border-top:0px;
+			}
+			.table_box table{
+				width: 402px;
+				height: 183px;
+				border: 1px solid #cacbcb;
+				margin-left: 36px;
+				margin-top: 29px;
+				border-collapse: collapse;
+			}
+			.table_box table td{
+				border: 1px solid #cacbcb;
+				text-align: center;
+				height: 30px;
+				width: 100px;
+				color: #535353;
+				font-family: "宋体";
+				font-size: 12px;
+			}
+			.table_box table #td1{
+				background: #f4f5f7;
+			}
+			.table_top .table_2{
+				width:351px;
+				height: 357px;
+				border-radius: 15px;
+				border: 1px solid #d0d2d6;
+				background: #fff;
+				position: relative;
+				left: 15px;
+				float: left;
+			}
+			.table_2 .text{
+				border-bottom: 1px solid #e7e8eb;
+				border-radius: 15px 15px 0 0 ;
+				background: #f4f5f7;
+			}
+			.text p{
+				height: 40px;
+				line-height: 40px;
+				color: #aaaaaa;
+			}
+			.table_2 .sp1{
+				color: #c3c2c2;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				display: inline-block;
+			}
+			.table_2 .sp2{
+				color: #535353;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				display: inline-block;
+			}
+			.table_2 #sp7{
+				margin-left: 51px;
+				margin-top: 18px;
+			}
+			.table_2 #sp8{
+				margin-left: 51px;
+				margin-top: 3px;
+			}
+			.table_2 #div1{
+				width:96px;
+				height: 44px;
+				border: 1px solid #e8e8e8;
+				border-left: 0px;
+				margin-left: 36px;
+				margin-top: 8px;
+			}
+			#div1 span{
+				text-indent: 15px;
+			}
+			.table_2 #div2{
+				width:186px;
+				height: 44px;
+				border: 1px solid #e8e8e8;
+				border-left: 0px;
+				border-right: 0px;
+				margin-top: 8px;
+				position: absolute;
+				left: 133px;
+				top: 97px;
+			}
+			#div2 span{
+				text-indent: 15px;
+			}
+			.table_2 #div3{
+				width: 281px;
+				height: 146px;
+				border-bottom:1px solid #e8e8e8;
+				margin-left: 40px;
+			}
+			.table_2 #sp9{
+				margin-left: 13px;
+			}
+			.table_2 #sp10{
+				margin-left: 13px;
+			}
+			.table_2 #check{
+				margin-left: 40px;
+				margin-top: 12px;
+			}
+			.table_2 #sp11{
+				position: absolute;
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+			.table_2 #btn4{
+				right: 30px;
+				margin-top: 10px;
+				position: absolute;
+				width:51px;
+				height: 24px;
+				background: #388ac1;
+				color: #fff;
+				border: 0px;
+				line-height: 24px;
+			}
+			.content .table_bottom{
+				position: relative;
+				height:355px;
+				width: 891px;
+				left: 61px;
+				right: 61px;
+				top: 318px;
+			}
+			.table_bottom .table_3{
+				width: 351px;
+				height: 355px;
+				border-radius: 15px;
+				border: 1px solid #d0d2d6;
+				background: #fff;
+				position: relative;
+				float: left;
+			}
+			.table_3 .text{
+				border-bottom: 1px solid #e7e8eb;
+				border-radius: 15px 15px 0 0 ;
+				background: #f4f5f7;
+			}
+			.text p{
+				height: 41px;
+				line-height: 41px;
+				color: #aaaaaa;
+				margin-left: 22px;
+			}
+			.table_3 .select{
+				height: 20px;
+				border: 1px solid #d0d2d6;
+				margin-top: 9px;
+				text-align: center;
+				color: #535353;
+				font-size: 12px;
+				font-family: "黑体";
+			}
+			.table_3 #sel1{
+				width:64px;
+				margin-left: 22px;
+			}
+			.table_3 #sel2{
+				width:85px;
+				text-indent: 25px;
+			}
+			.table_3 #sel3{
+				width:75px;
+			}
+			.table_3 #sel4{
+				width:64px;
+				margin-right: 22px;
+			}
+			.table_3 .int{
+				margin-left: 22px;
+				margin-right: 25px;
+				margin-top: 10px;
+				border-bottom: 1px solid #d0d2d6;
+				border-top: 2px solid #a9cfec;
+			}
+			.int .span5{
+				font-size: 12px;
+				color: #000;
+				font-family: "黑体";
+				margin-left: 27px;
+				line-height: 30px;
+			}
+			.int #span3{
+				margin-left: 10px;
+			}
+			.int #span4{
+				margin-right: 10px;
+			}
+			.table_3 .table_5{
+				width: 310px;
+				height: 208px;
+				margin-left: 17px;
+			}
+			.table_5 td{
+				width: 40px;
+				height: 41px;
+				font-size: 12px;
+				text-align: center;
+				display: inline-block;
+				margin-left: 3px;
+			}
+			.table_5 tr td:first{
+				margin-left: 0px;
+			}
+			.table_5 td .span6{
+				color: #000;
+			}	
+			.table_5 td .span7{
+				color: #c9161d;
+				font-weight: 600;
+			
+			}
+			.table_5  td .span8{
+				color: red;
+			}
+			.table_5 td .span9{
+				color: #000;
+			}
+			.table_bottom .table_4{
+				width: 535px;
+				height: 355px;
+				border-radius: 15px;
+				border: 1px solid #d0d2d6;
+				background: #fff;
+				position: relative;
+				float: right;
+				left: 14px;
+			}
+			.table_4 .text{
+				border-bottom: 1px solid #e7e8eb;
+				border-radius: 15px 15px 0 0 ;
+				background: #f4f5f7;
+			}
+			.text p{
+				height: 41px;
+				line-height: 41px;
+				color: #aaaaaa;
+				margin-left: 22px;
+			}
+			.table_4 .table_6{
+				width: 451px;
+				height: 275px;
+				margin-left: 40px;
+				margin-top: 18px;
+				border: 1px solid #d0d2d6;
+				border-bottom: 0px solid #fff;
+				border-collapse: collapse;
+			}
+			.table_6 td{
+				height:24px;
+				border: 1px solid #cacbcb;
+				font-size: 12px;
+				color: #323333;
+				font-size: '黑体';
+				position: relative;
+			}
+			.table_6 .td1{
+				width:68px;	
+				text-align: center;			
+			}
+			.table_6 .td2{
+				text-align: center;		
+				width: 94px;				
+			}
+			.table_6 .td3{
+				width: 291px;
+				padding-left:34px ;
+			}
+			.table_6 #td2{
+				padding-left:30px ;
+			}
+			.table_6 .tr1{
+				font-size: 13px;
+				color: #000;
+				font-weight: 600;
+			}
+			.table_6 #tr1 td{
+				border-bottom: 1px solid #fff;
+			}
+			.table_6 .tr2{
+				background: #f4f5f7;
+			}
+			.table_6 td .gray{
+				width: 168px;
+				height: 5px;
+				background-color: #dcdcdc;
+				margin-right: 25px;
+				margin-top: 6px;
+				float: right;
+			}
+			.table_6 td .red{
+				position: absolute;
+				background: #ec6d51;
+				width: 143px;
+				height: 5px;
+				top: 10px;
+				left: 115px;
+			}
+			.table_6 td .orange{
+				background: #ef804f;
+				position: absolute;
+				width: 120px;
+				height: 5px;
+				top: 10px;
+				left: 115px;
+			}
+			.table_6 td .orange1{
+				background: #f29f4f;
+				position: absolute;
+				width: 106px;
+				height: 5px;
+				top: 10px;
+				left: 115px;
+			}
+			.table_6 td .blue{
+				position: absolute;
+				height: 5px;
+				top: 10px;
+				left: 115px;
+				background: #7ecaf0;
+			}
+			.table_6 td #b1{
+				width: 97px;
+			}
+			.table_6 td #b2{
+				width: 88px;
+			}
+			.table_6 td #b3{
+				width: 80px;
+			}
+			.table_6 td #b4{
+				width: 74px;
+			}
+			.table_6 td #b5{
+				width: 63px;
+			}
+			.table_6 td #b6{
+				width: 60px;
+			}
+			.table_6 td #b7{
+				width: 53px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header>
+			<img id='i1' src='img/logo.png'>
+			<input type="text">
+			<img id='i2' src='img/search.png'>
+			<img id='i3' src='img/person.png'>
+			<p>登录</p>
+		</header>
+		<div class="box">
+			<div class="left">
+				<div class='left_one'>
+					<img id='i4'src='img/per.png'>
+					<img id='i5' src='img/per1.png'>
+					<p id="p1">Yzz</p>
+					<p id='p2'>110</br>收藏</p>
+					<div></div>
+					<p id='p3'>313</br>粉丝</p>
+				</div>
+				<div class="left_two">
+					<img id='ic1' src="img/ic1.png"><span id="sp1">个人报表</span><br/>
+					<img src="img/ic2.png" id="ic2"><img src="img/ic2_2.png" id="ic2_2"><span id="sp2">文件一</span>
+					<img src="img/ic3_2.png" id="ic3_2"><span id="sp3">文件二</span><br/>
+					<img src="img/ic4.png" id="ic4"><span id="sp4">文档1</span><br/>
+					<img src="img/ic5.png" id="ic5"><span id="sp5">文档1</span><br/>
+					<img src="img/ic6.png" id="ic6"><img src="img/ic2_2.png" id="ic6_2"><span id="sp6">文件三</span>
+				</div>
+				<div class="left_three">
+					<img src="img/ic7.png" id="ic7"><span>个人收藏</span><br/>
+					<img src="img/ic8.png" id="ic8"><span>我的分享</span><br/>
+					<img src="img/ic7.png" id="ic9"><span>图库</span><br/>
+					<img src="img/ic7.png" id="ic10"><span>成长记录</span><br/>
+					<img src="img/ic9.png" id="ic11"><span>账户信息</span>
+				</div>
+			</div>
+			<div class="right">
+				<div class="header">
+					<p>C站&nbsp;/&nbsp;个人报表&nbsp;/&nbsp;文件一&nbsp;/&nbsp;<span>文档一</span></p>
+				</div>
+				<div class="content">
+					<div class="input">
+						<span id="s1">查询项</span>
+						<select id="se1">
+							 <option value="第一项">第一项</option>
+						</select>
+						<span id="s2">买方</span>
+						<select id="se2">
+							<option value="小A">小A</option>
+						</select>
+						<span id="s3">日期</span>
+						<input type="text"  id="se3" value="2017-06-02" />
+						<span id="s4">总耗时</span>
+						<select id="se4">
+							 <option value="8天">8天</option>
+						</select>
+						<br/>
+						<span id="s5">卖方</span>
+						<select id="se5">
+							 <option value="小C">小C</option>
+						</select>
+						<span id="s6">人数</span>
+						<select id="se6">
+							 <option value="10人">10人</option>
+						</select>
+						<span id="s7">成交项</span>
+						<select id="se7">
+							 <option value="10项">10项</option>
+						</select>
+						<input type="button" value="搜索" id="btn1">
+						<img src="img/change.png" id="change">
+					</div>
+					<div class="btn">
+						<div class="prev"><</div>
+						<div id="box_1">
+							<p>10:00 am</p>
+							<span class="span1">￥</span><span class="span2">1200</span>
+						</div>
+						<div class="box_2">
+							<p>11:00 am</p>
+							<span class="span1">￥</span><span class="span2">1300</span>
+						</div>
+						<div class="box_2">
+							<p>12:00 am</p>
+							<span class="span1">￥</span><span class="span2">1200</span>
+						</div>
+						<div class="box_2">
+							<p>01:00 pm</p>
+							<span class="span1">￥</span><span class="span2">1400</span>
+						</div>
+						<div class="box_2">
+							<p>02:00 pm</p>
+							<span class="span1">￥</span><span class="span2">1500</span>
+						</div>
+						<div class="box_2">
+							<p>03:00 pm</p>
+							<span class="span1">￥</span><span class="span2">1800</span>
+						</div>
+						<div class="next">></div>
+						<div class="box_3">
+							<img src="img/time.png">
+							<p>历史查询</p>
+						</div>
+					</div>
+					<div class="box_color">
+						<p>2017年6月份统计</p>
+						<div class="box_g">
+							<span class="span3">133311</span>
+							<span class="span4">成交量</span>
+							<div id="green"></div>
+						</div>
+						<div class="box_b">
+							<span class="span3">133311</span>
+							<span class="span4">成交量</span>
+							<div id="blue"></div>
+						</div>
+						<div class="box_r">
+							<span class="span3">133311</span>
+							<span class="span4">成交量</span>
+							<div id="red"></div>
+						</div>
+						<div class="box_y">
+							<span class="span3">133311</span>
+							<span class="span4">成交量</span>
+							<div id="yellow"></div>
+						</div>
+					</div>
+					<div class="table_top">
+						<div class="table_1">
+							<div class="text"><p>第一组项目</p></div>
+							<div class="pro">
+								<div class="pro_1">项目一</div>
+								<div class="pro_2">项目二</div>
+								<div class="pro_3">项目三</div>
+								<div class="pro_4">项目四</div>
+								<div class="pro_5">项目五</div>
+							</div>
+							<div class="table_box">
+								<table>
+									<tr>
+										<td id="td1">采购材料一</td>
+										<td>采购材料一</td>
+										<td>采购材料一</td>
+										<td>采购材料一</td>
+									</tr>
+									<tr>
+										<td>采购材料二</td>
+										<td>采购材料二</td>
+										<td>采购材料二</td>
+										<td>采购材料二</td>
+									</tr>
+									<tr>
+										<td>采购材料四</td>
+										<td>采购材料四</td>
+										<td>采购材料四</td>
+										<td>采购材料四</td>
+									</tr>
+									<tr>
+										<td>采购材料六</td>
+										<td>采购材料六</td>
+										<td>采购材料六</td>
+										<td>采购材料六</td>
+									</tr>
+									<tr>
+										<td>采购材料十三</td>
+										<td>采购材料十三</td>
+										<td>采购材料十三</td>
+										<td>采购材料十三</td>
+									</tr>
+									<tr>
+										<td>采购材料二十</td>
+										<td>采购材料二十</td>
+										<td>采购材料二十</td>
+										<td>采购材料二十</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="table_2">
+							<div class="text"><p>第一组项目</p></div>
+							<span class="sp1" id="sp7">标题</span><br/>
+							<span class="sp2" id="sp8">项目报表三</span>
+							<div id="div1"><span class="sp1">价格</span><br/><span class="sp2">￥158</span></div>
+							<div id="div2"><span class="sp1">负责人</span><br/><span class="sp2">小A</span></div>
+							<div id="div3">
+								<span class="sp1" id="sp9">详细描述</span><br/>
+								<span class="sp2" id="sp10">该项目目前负责人是......</span>
+							</div>
+							<input type="checkbox" checked id="check"><span class="sp1" id="sp11">遵守保密协议</span>
+							<input type="button" value="搜索" id="btn4">
+						</div>
+					</div>
+					<div class="table_bottom">
+						<div class="table_3">
+							<div class="text"><p>日历</p></div>
+							<select class="select" id="sel1">
+								<option>2017年</option>
+							</select>
+							<select class="select" id="sel2">
+								<option>4月</option>
+							</select>
+							<select class="select" id="sel3">
+								<option>标注日期</option>
+							</select>
+							<input class="select" id="sel4" value="返回今天">
+							<div class="int">
+								<span class="span5" id="span3">日</span>
+								<span class="span5">一</span>
+								<span class="span5">二</span>
+								<span class="span5">三</span>
+								<span class="span5">四</span>
+								<span class="span5">五</span>
+								<span class="span5" id="span4">六</span>
+							</div>
+							<table class="table_5">
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><span class="span6">1</span><br/><span class="span7">愚人节</span></td>
+									<td><span class="span6">2</span><br/><span class="span9">廿五</span></td>
+									<td><span class="span8">3</span><br/><span class="span9">廿六</span></td>
+								</tr>
+								<tr><!--6 数字黑  8 数字红  7 文字红  9 文字黑-->
+									<td><span class="span8">4</span><br/><span class="span9">廿七</span></td>
+									<td><span class="span6">5</span><br/><span class="span7">清明节</span></td>
+									<td><span class="span6">6</span><br/><span class="span9">廿九</span></td>
+									<td><span class="span6">7</span><br/><span class="span9">三月</span></td>
+									<td><span class="span6">8</span><br/><span class="span9">初二</span></td>
+									<td><span class="span6">9</span><br/><span class="span9">初三</span></td>
+									<td><span class="span8">10</span><br/><span class="span9">初四</span></td>
+								</tr>
+								<tr>
+									<td><span class="span8">11</span><br/><span class="span9">初五</span></td>
+									<td><span class="span6">12</span><br/><span class="span9">初六</span></td>
+									<td><span class="span6">13</span><br/><span class="span9">初七</span></td>
+									<td><span class="span6">14</span><br/><span class="span9">初八</span></td>
+									<td><span class="span6">15</span><br/><span class="span9">初九</span></td>
+									<td><span class="span6">16</span><br/><span class="span9">初十</span></td>
+									<td><span class="span8">17</span><br/><span class="span9">十一</span></td>
+								</tr>
+								<tr>
+									<td><span class="span8">18</span><br/><span class="span9">十二</span></td>
+									<td><span class="span6">19</span><br/><span class="span9">十三</span></td>
+									<td><span class="span6">20</span><br/><span class="span9">十四</span></td>
+									<td><span class="span6">21</span><br/><span class="span9">十五</span></td>
+									<td><span class="span6">22</span><br/><span class="span9">十六</span></td>
+									<td><span class="span6">23</span><br/><span class="span9">十七</span></td>
+									<td><span class="span8">24</span><br/><span class="span9">十八</span></td>
+								</tr>
+								<tr>
+									<td><span class="span8">25</span><br/><span class="span9">十九</span></td>
+									<td><span class="span6">26</span><br/><span class="span9">廿十</span></td>
+									<td><span class="span6">27</span><br/><span class="span9">廿一</span></td>
+									<td><span class="span6">28</span><br/><span class="span9">廿二</span></td>
+									<td><span class="span6">29</span><br/><span class="span9">廿三</span></td>
+									<td><span class="span6">30</span><br/><span class="span9">廿四</span></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table_4">
+							<div class="text"><p>汽车行业品牌榜</p></div>
+							<table class="table_6">
+								<tr class="tr1">
+									<td class="td1">排名</td>
+									<td class="td2">品牌</td>
+									<td id="td2">搜索指数</td>
+								</tr>
+								<tr class="tr2">
+									<td class="td1">1</td>
+									<td class="td2">大众</td>
+									<td class="td3">
+										48912001
+										<div class="gray"></div>
+										<div class="red"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">2</td>
+									<td class="td2">丰田</td>
+									<td class="td3">
+										29307333
+										<div class="gray"></div>
+										<div class="orange"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">3</td>
+									<td class="td2">奥迪</td>
+									<td class="td3">
+										23139070
+										<div class="gray"></div>
+										<div class="orange1"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">4</td>
+									<td class="td2">本特</td>
+									<td class="td3">
+										22885564
+										<div class="gray"></div>
+										<div class="blue" id="b1"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">5</td>
+									<td class="td2">福特</td>
+									<td class="td3">
+										22324792
+										<div class="gray"></div>
+										<div class="blue" id="b2"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">6</td>
+									<td class="td2">宝马</td>
+									<td class="td3">
+										21444077
+										<div class="gray"></div>
+										<div class="blue" id="b3"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">7</td>
+									<td class="td2">现代</td>
+									<td class="td3">
+										20114969
+										<div class="gray"></div>
+										<div class="blue" id="b4"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">8</td>
+									<td class="td2">起亚</td>
+									<td class="td3">
+										19251680
+										<div class="gray"></div>
+										<div class="blue" id="b5"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1">9</td>
+									<td class="td2">奔驰</td>
+									<td class="td3">
+										19172837
+										<div class="gray"></div>
+										<div class="blue" id="b6"></div>
+									</td>
+								</tr>
+								<tr id="tr1">
+									<td class="td1">10</td>
+									<td class="td2">别克</td>
+									<td class="td3">
+										18544027
+										<div class="gray"></div>
+										<div class="blue" id="b7"></div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
