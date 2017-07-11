@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>湖北经济学院</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="style/bootstrap.min.css">
+    	<link rel="stylesheet" href="style/style.css">
+    	<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<nav class="navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand">湖北经济学院</span>
+			</div>
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home" data-toggle="tab">学校介绍</a></li>
+					<li><a href="#postbar" tabindex="-1" data-toggle="tab">贴吧介绍</a></li>
+					<li><a href="#school-activity" data-toggle="tab" tabindex="-1">校园组织</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">校园风光
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#school-pic" data-toggle="tab" tabindex="-1">校园图片</a></li>
+							<li><a href="#personal-pic" data-toggle="tab" tabindex="-1">个人图片</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"> 用户</span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"> 登录</span></a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	<br/><br/>
+	<div id="myTabContent" class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="image/1.jpg" alt="first">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="image/2.jpg" alt="first">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="image/3.jpg" alt="first">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="image/4.jpg" alt="first">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
+		<div class="box_1"></div>
+		<div class="container">
+			<div class="col-xs-12 col-sm-6 col-md-3 box">
+				<form role="form">
+					<caption>欢迎来到湖北经济学院！</caption>
+					<br/><br/>
+					<div class="form-group form-inline">
+						<label for="account">学号：</label>
+						<input type="text" class="form-control" id="account" placeholder="请输入学号">
+					</div>
+					<div class="form-group form-inline">
+						<label for="account">密码：</label>
+						<input type="password" class="form-control" id="password">
+					</div>
+					<button type="submit" class="btn btn-primary">登录</button>
+					<button type="reset" class="btn btn-primary">撤销</button>
+				</form>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-9">
+				<h2>学校简介</h2>
+				<p>
+					湖北经济学院于2002年9月经教育部批准组建，是湖北省政府举办的全日制普通本科院校，办学历史最早可追溯到1907年张之洞创办的“湖北商业中学堂”。学校位于武汉光谷核心区，坐落在风景秀丽的汤逊湖畔，占地面积1740亩，校舍建筑面积66万平方米。
+				</p> 
+				<p>
+					今天的湖北经济学院秉承“厚德博学、经世济民”理想，坚持以学生为中心、立德树人，努力让学生获得更高质量学习经历，坚持需求导向、创新协同、人才强校、特色兴校、依法治校，着力推进内涵建设、深化综合改革、提升治理能力、强化党建保障，坚定不移地朝着特色鲜明的高水平财经大学目标迈进。
+				</p>
+			</div>
+		</div>
+		<br/>
+		<hr/>
+		<br/>
+		<div class="container">
+			<form role="form">
+				<div class="form-group">
+					<p>请选择</p>
+					<select>
+						<option>院系</option>
+						<option>信统院</option>
+						<option>信工院</option>
+					</select>
+					<select>
+						<option>班级</option>
+						<option>电商Q1441</option>
+						<option>软件Q1441</option>
+					</select>
+				</div>
+			</form>
+			<table class="table table-hover table-border">
+				<caption>2017-2018年度第一学期课表</caption>
+				<tr>
+					<th></th>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+					<th>周末</th>
+				</tr>
+				<tr>
+					<th>上午</th>
+					<td>电商概论</td>
+					<td>线性代数</td>
+					<td>大学英语</td>
+					<td>Java</td>
+					<td>数据库</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>下午</th>
+					<td>数据库</td>
+					<td>大学语文</td>
+					<td>Java</td>
+					<td>大学英语</td>
+					<td>统计学</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>晚上</th>
+					<td>马原</td>
+					<td>概率论</td>
+					<td>毛概</td>
+					<td>Java</td>
+					<td>数据库</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="container form">
+			<form role="form" class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">姓名：</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">电话：</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">邮箱：</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" placeholder="***@**.**">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">建议：</label>
+					<div class="col-sm-6">
+						<textarea cols="30" rows="4"></textarea>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success">提交</button>
+			</form>
+		</div>
+		<div class="footer">
+			<p>版权所有: Yzzplus | 湖北经济学院</p>
+			<p>友情链接：
+				<a href="https://github.com/yzzplus">github</a>
+				<a href="https://yzzplus.github.io/">博客</a>
+			</p>
+		</div>
+		</div>
+		<div id="postbar" class="tab-pane fade" style="margin-top: 10px;">
+			<img src="image/01.png" style="width: 100%;">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li><a href="#artical_1" class="text-danger">【湖北经济学院新生指南】</a></li>
+					<li><a href="#artical_2" class="text-primary">说说你近期愿望。女生进来说，男生快来认领</a></li>
+				</ul>
+				<br/><br/>
+				<div id="artical_1">
+				<h3>【湖北经济学院新生指南】</h3>
+				<br/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<h4 class="text-primary">前言</h4>
+						<p>
+							首先欢迎学弟学妹来到湖北经济学院吧，可以在此贴了解关于经院的相关信息。楼主整理的内容来源主要是本吧精品贴及学校相关组织的微博和微信公众号等等，希望各位小可爱能够认真看完，相信能够帮助你们解决很多问题。如果还有疑问也可以提出，也希望本吧热心的学长学姐帮忙解答。
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h4  class="text-danger">校园概况：</h4>
+						<p>
+							湖北经济学院位于湖北省武汉市江夏区藏龙岛杨桥湖大道8号，以后快递地址可以直接填这个。校园占地面积1740亩，校舍建筑面积62万平方米。设有19个教学单位，有硕士专业学位授权点1个，开办本科专业56个。现有专任教师872人，其中教授123人、副教授332人，主干学科博士教师占比54.3％。
+						</p>
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<h4 class="text-primary">寝室：</h4>
+						<p>
+							首先说下大家比较关心的寝室情况，有空调、独卫，有4人间、5人间和6人间，主要是4人和6人的，寝室是院系已经划分好的，目前还不知道划分的情况，等到快开学就应该出来了。
+							本院学生基本都住在东区，只有会计、金融院部分班级在西区。
+							男生寝室：栎苑1-5，栎1、栎2是6人间，剩下的都是4人间
+							女生寝室：桔苑1-9，桔3、桔4是4人间，剩下都是6人间
+							寝室的门都是防盗门，要刷卡才能进。
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p>
+							虽然寝室不能选，但是可以去早点选个铺位的，如果去晚了，可能会因为班级寝室不够，而跟其他的学长学姐住在一起，也就是混寝。跟学长学姐住一起有利也有弊，好处就是来大学了有人可以带带你，在一个陌生的环境能够迅速适应，成功变成老司机；但是不好的就是，大一要做早操，会吵到他们，并且在上课、班上的通知可能没人告诉你，挺耽误事儿！
+							4人间是上床下铺，并且每个人都有小衣柜！！！6人间有两个下铺，4个上铺，靠近外面的是两个桌子，中间是两个上下铺，最里面是2个上床下桌，也就是1个床下面对应2个桌子，早点去了可以选个好位置，选在靠外的要开门关门关灯，靠里面的里洗漱台、厕所毕竟近，声音大。
+						</p>
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">			
+						<h4 class="text-success">食堂：</h4>
+						<p>
+							再说说食堂，感觉武汉能和经院食堂相比的也没几个了，食堂装修是真的棒，一共五个食堂，一粟堂、三清园在东区，七品居、九华厅在西区，还有一个不对外开放的五味轩。食堂价格都是差不多，除了每个食堂一楼二楼有些区别，一楼的便宜些（一个素菜两三块，荤菜四五块左右吧），二楼的贵一些（基本都是8块到10块之间）。食堂一楼的饭菜样式可能跟你们高中差不多，但是真的挺好吃的。
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">		
+						<p>
+							二楼只能说风格多样吧，麻辣烫、盖浇饭、炒饭、面条、麻辣香锅、小碗菜、烤肉饭、黄焖鸡等等等等！！！等大家来了可以亲自去试试。
+							要是实在觉得食堂的饭菜不可口，或者住的楼层比较高，不愿意去食堂，也可以点外卖啥的，美团、饿了么大家也可以用用，但是不建议长期点外卖，电视网络上已经好多都曝光了外卖不怎么干净，关键是外卖确实是有点贵啊。	
+						</p>
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-5 col-md-3">
+						<img src="image/5.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/6.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/7.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/8.jpg" style="width: 165px;height: 120px;">
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-5 col-md-3">
+						<img src="image/9.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/10.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/11.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/12.jpg" style="width: 165px;height: 120px;">
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-5 col-md-3">
+						<img src="image/13.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/14.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/15.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/16.jpg" style="width: 165px;height: 120px;">
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-5 col-md-3">
+						<img src="image/17.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/18.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/19.jpg" style="width: 165px;height: 120px;">
+					</div>
+					<div class="col-xs-5 col-md-3">
+						<img src="image/20.jpg" style="width: 165px;height: 120px;">
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">			
+						<h4 class="text-warning">校园周边：</h4>
+						<p>
+							在介绍下学校周边吧，个人算是比较宅吧，不怎么出校，所以介绍可能不太详细。学校外面可以说啥都有吧，也许你觉得学校这么偏，应该啥都不方便的，但是可能会出乎你的意料哦。电影院有两个，高德和宏大，高德影城是最近两年才有的，相对来说环境好很多。
+							KTV外面也有好多，想唱就唱、男生女生、非常董事会等等，想唱就唱的环境好些，价格也贵点，不管是订KTV、还是定位置聚餐最好提前跟老板当面说好，不然。。。要不没位置，要不就让你等好久。
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">		
+						<p>
+							网吧也有很多，金鹰、趣尚、星空、九尾狐、交友啊，楼主去的比较少，大家想去的可以问问其他的学长学姐，或者亲自来感受下。
+							另外，学校外面还有很多好吃的地方，饭馆、火锅店、烧烤、烤肉、餐厅等等，在这里也不推荐了，喜爱美食的可以每一家都亲自试试哦！好玩的地方也不少，潮玩工厂、溜冰场、电玩城、A8台球会所等等。要买书或者参考资料的，外面有个学友书店，买药校内有校医院，外面也有个康乃馨大药房，买衣服外面也有服装店。要是实在觉得不好玩，也可以直接坐车去光谷
+						</p>
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">			
+						<h4 class="text-info">校园内部：</h4>
+						<p>
+							有东区服务中心跟校内商业街，还有食堂里面的小超市，平时买个水果、零食、日用品都在校内，挺方便的，基本上都可以用支付宝、微信付款的。东区服务中心还有打印店、理发店、电脑手机维修店，商业街一楼有两个超市、农行自助取款，还有邮政（在农行的后面），二楼有照相馆、服装店（多是正装出租或者售卖）
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">		
+						<p>
+							 还有就是大家以后可能会关心的快递在哪里领取的问题，快递基本都在西区食堂九华厅对面的那条路上，圆通、顺丰、申通、百世汇通、韵达等都直接能看到，京东跟中通在旁边的巷子里，邮政在商业街农行后面，当当跟唯品会在北大门。
+						</p>
+						<p>
+							图书馆，学习圣地每到考试前夕，不不不，是考试前半个月基本上已经是人满为患了，为了考试大家都在拼命，基本是座无虚席，平常人还好，基本上都能找到座位，一楼的里面的阅览室是需要用软件占座的，其他的都可以随便坐，图书馆的环境真的挺不错的，平时没事可以多去看看书，做作业啥的，里面的书也挺多的。
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<hr style="border: 2px dashed;"/>
+			<div id="artical_2">
+				<div class="container">
+					<div class="row">
+						<h3>说说你近期愿望。女生进来说，男生快来认领。</h3>
+						<div class="col-xs-12 col-md-6">
+							<ol>
+								<li>谈场恋爱，少一点套路，多一点真诚</li>
+								<li>找个可以柏拉图式恋爱的女友</li>
+								<li>感受夏天的气息，让春天快点过去~</li>
+								<li>瘦十斤 然后保佑我逃课不被捉 考试不挂科就可以</li>
+								<li>想找个陪我跑800米，打球的男朋友</li>
+							</ol>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<ol>
+								<li>瘦成一道闪电，然后走向人生巅峰</li>
+								<li>过CPA，不要一个人</li>
+								<li>养只猫，或者找个养猫的大长腿</li>
+								<li>每早可以吃到热乎乎的早餐 好想吃热干面，喝豆腐脑</li>
+								<li>近期愿望就是学校只要到下雨天就停课！！</li>
+							</ol>
+						</div>
+					</div>
+					<hr style="border:1px dashed;" class="col-xs-12"/>
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<ol>
+								<li>来个打dota妹子，拒绝lol会不会一波人冲过来打我</li>
+								<li>我想生意天天爆满，然后有多的钱可以打报不平</li>
+								<li>毕业之前找个心仪的女生，用心守护着，告别苦恼的单身生活。</li>
+								<li>健身之路，增肌成功！</li>
+								<li>老老实实上班，踏踏实实干事，不要太急躁，心态调整好</li>
+							</ol>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<ol>
+								<li>出国之前把要做的事都做好了，然后安心出国读书考研</li>
+								<li>愿自己的努力能让父母老的慢点</li>
+								<li>陪我健身，陪我跑步，陪我旅游，陪我聊天，找个全能蓝颜</li>
+								<li>我还想让你回来找我，跟梦里的一样。</li>
+								<li>只想遇到个自己有感觉，长得不错，性格好的女生度过接下来的几年。</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>版权所有：Yzzplus | 湖北经济学院吧</p>
+				<p>友情链接：
+					<a href="https://github.com/yzzplus">github</a>
+					<a href="https://yzzplus.github.io/">博客</a>
+				</p>
+			</div>
+		</div>
+		<div id="school-activity" class="tab-pane fade">
+			<br/>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6 list-group">
+						<ul class="list-group">
+							<li class="list-group-item active">学生社团联合会</li>
+							<li class="list-group-item">监察部干事&nbsp;&nbsp;&nbsp;&nbsp;2014.9--2015.6</li>
+							<li class="list-group-item">监察部部长&nbsp;&nbsp;&nbsp;&nbsp;2015.6--2016.6</li>
+							<br/>
+							<img src="image/organize/11.jpg" class="img-circle img-size-1">
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<div class="list-group">
+							<img src="image/organize/1.jpg" class="img-circle img-size">
+							<img src="image/organize/2.jpg" class="img-circle img-size">
+							<img src="image/organize/3.jpg" class="img-circle img-size">
+							<img src="image/organize/4.jpg" class="img-circle img-size">
+						</div>
+						<div class="list-group">
+							<img src="image/organize/5.jpg" class="img-circle img-size">
+							<img src="image/organize/6.jpg" class="img-circle img-size">
+							<img src="image/organize/7.jpg" class="img-circle img-size">
+							<img src="image/organize/8.jpeg" class="img-circle img-size">
+						</div>
+						<div class="list-group">
+							<img src="image/organize/9.jpeg" class="img-circle img-size">
+							<img src="image/organize/10.jpeg" class="img-circle img-size">
+						</div>
+					</div>
+				</div>
+				<hr class="col-xs-12 col-md-12"/>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item active">信管学院学生会</li>
+							<li class="list-group-item">科技部干事&nbsp;&nbsp;&nbsp;&nbsp;2014.9--2015.1</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<img src="image/organize/12.jpg" class="img-rounded img-size-2">
+						<img src="image/organize/13.jpeg" class="img-rounded img-size-2">
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<div class="footer">
+				<p>版权所有：Yzzplus</p>
+				<p>友情链接：
+					<a href="https://github.com/yzzplus">github</a>
+					<a href="https://yzzplus.github.io/">博客</a>
+				</p>
+			</div>
+		</div>
+		<div id="school-pic" class="tab-pane fade">
+			<br/>
+			<div class="container">
+				<h4 class="h-1">“你的名字”为画风的校园图片</h4>
+				<div class="list-group">
+					<div class="list-group-item box-1">
+						<img src="image/school/1.jpg" class="img-size-3 img-thumbnail">
+						<p>图书馆</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/2.jpg" class="img-size-3 img-thumbnail">
+						<p>大学生活动中心</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/3.jpg" class="img-size-3 img-thumbnail">
+						<p>5号教学楼</p>
+					</div>
+				</div>
+				<div class="list-group">
+					<div class="list-group-item box-1">
+						<img src="image/school/4.jpg" class="img-size-3 img-thumbnail">
+						<p>求索桥</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/5.jpg" class="img-size-3 img-thumbnail">
+						<p>图书馆</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/6.jpg" class="img-size-3 img-thumbnail">
+						<p>图书馆</p>
+					</div>
+				</div>
+				<div class="list-group">	
+					<div class="list-group-item box-1">
+						<img src="image/school/7.jpg" class="img-size-3 img-thumbnail">
+						<p>宿舍</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/8.jpg" class="img-size-3 img-thumbnail">
+						<p>雕像</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/9.jpg" class="img-size-3 img-thumbnail">
+						<p>腾龙大道</p>
+					</div>
+				</div>
+				<hr class="col-xs-12"/>
+				<br/>
+				<h4 class="h-2">随手拍</h4>
+				<div class="list-group">	
+					<div class="list-group-item box-1">
+						<img src="image/school/10.jpg" class="img-size-3 img-thumbnail">
+						<p>集思河与求索桥</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/11.jpg" class="img-size-3 img-thumbnail">
+						<p>教学楼</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/12.jpg" class="img-size-3 img-thumbnail">
+						<p>东大门</p>
+					</div>
+				</div>
+				<div class="list-group">	
+					<div class="list-group-item box-1">
+						<img src="image/school/13.jpg" class="img-size-3 img-thumbnail">
+						<p>教学楼</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/14.jpg" class="img-size-3 img-thumbnail">
+						<p>航拍全景</p>
+					</div>
+					<div class="list-group-item box-1">
+						<img src="image/school/15.jpg" class="img-size-3 img-thumbnail">
+						<p>航拍全景</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>版权所有：Yzzplus</p>
+				<p>友情链接：
+					<a href="https://github.com/yzzplus">github</a>
+					<a href="https://yzzplus.github.io/">博客</a>
+				</p>
+			</div>
+		</div>
+		<div id="personal-pic" class="tab-pane fade">
+			<div class="container">
+				<br/><br/>
+				<div class="row">
+					<div class="list-group col-xs-12 col-md-6">	
+						<div class="list-group-item box-2">
+							<img src="image/personal/6.jpg" class="img-size-4 img-thumbnail">
+							<p>斗地主</p>
+						</div>
+						<div class="list-group-item box-2">
+							<img src="image/personal/2.jpg" class="img-size-4 img-thumbnail">
+							<p>军训</p>
+						</div>
+					</div>
+					<div class="list-group col-xs-12 col-md-6">	
+						<div class="list-group-item box-3">
+							<img src="image/personal/3.jpg" class="img-size-5 img-thumbnail">
+							<p>军训</p>
+						</div>
+						<div class="list-group-item box-3">
+							<img src="image/personal/4.jpg" class="img-size-5 img-thumbnail">
+							<p>军训</p>
+						</div>
+					</div>
+				</div>
+				<div class="row list-group">
+					<div class="list-group-item box-3">
+						<img src="image/personal/5.jpeg" class="img-size-5 img-thumbnail">
+						<p>篮球队</p>
+					</div>
+					<div class="list-group-item box-5">
+						<img src="image/personal/7.jpg" class="img-size-3 img-thumbnail">
+						<p>ktv</p>
+					</div>
+					<div class="list-group-item box-4">
+						<img src="image/personal/1.jpg" class="img-size-1 img-thumbnail">
+						<p>植物园</p>
+					</div>
+					<div class="list-group-item box-3">
+						<img src="image/personal/8.jpeg" class="img-size-5 img-thumbnail">
+						<p>社联</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>版权所有：Yzzplus</p>
+				<p>友情链接：
+					<a href="https://github.com/yzzplus">github</a>
+					<a href="https://yzzplus.github.io/">博客</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
